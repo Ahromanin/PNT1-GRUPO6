@@ -9,6 +9,10 @@ body {
   background-color: #f0f0f0;
 }
 
+.titulo{
+  padding-right: 30px;
+}
+
 .info {
   padding-right: 75px;
   width: 55%;
