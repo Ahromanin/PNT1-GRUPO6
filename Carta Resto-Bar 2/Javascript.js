@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      validarChecks();
       const nombre = document.getElementById("nombre");
       const telefono = document.getElementById("telefono");
       const email = document.getElementById("email");
@@ -45,5 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
         form.submit();
       }
     });
+
+    function validarChecks() {
+      var chks = document.getElementsByName('chk []');
+      var hasChecked = false;
+      for (var i = 0; i < chks.length; i++) {
+          if (chks[i].checked) {
+              hasChecked = true;
+              break;
+          }
+      }
+      if (hasChecked == false) {
+          alert("Please select at least one hobby");
+          return false;
+      }
+      return true;
+  }
+
   });
   
