@@ -155,50 +155,56 @@
       <input type="text" id="nombre" required>
       <div class="error" id="nombre-error"></div>
     </div>
-    <div class="form-group">
+    <div class="form-group telefono">
+      <label for="telefono-prefix">Prefijo:</label>
+      <input type="text" id="telefono-prefix" value="011" disabled>
       <label for="telefono">Teléfono:</label>
       <input type="number" id="telefono" pattern="[0-9]{1,15}" required>
       <div class="error" id="telefono-error"></div>
     </div>
+    
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" id="email" required>
       <div class="error" id="email-error"></div>
     </div>
-    <div class="form-group">
-      <label><input class="carnes" type="checkbox" value="Carne Vacuna">Carne Vacuna:</label>
-      <input type="checkbox" name="producto" value="Con papas fritas"> Con papas fritas
-      <input type="checkbox" name="producto" value="Ensalada Mixta"> Ensalada Mixta
-      <input type="checkbox" name="producto" value="Pure"> Pure
-      <input type="checkbox" name="producto" value="Ensalada Rusa"> Ensalada Rusa
-      <input type="checkbox" name="producto" value="Verduras asadas"> Verduras asadas
+    <div class="form-group carne-section">
+      <label class="carnes"><input class="carnes" type="checkbox" value="Carne Vacuna">Carne Vacuna:</label>
+      <input type="checkbox" class="guarnicion" name="producto" value="Con papas fritas"> Con papas fritas
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Mixta"> Ensalada Mixta
+      <input type="checkbox" class="guarnicion" name="producto" value="Pure"> Pure
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Rusa"> Ensalada Rusa
+      <input type="checkbox" class="guarnicion" name="producto" value="Verduras asadas"> Verduras asadas
     </div>
-    <div class="form-group">
-      <label><input class="carnes" type="checkbox" value="Carne de ternera">Carne de ternera:</label>
-      <input type="checkbox" name="producto" value="Con papas fritas"> Con papas fritas
-      <input type="checkbox" name="producto" value="Ensalada Mixta"> Ensalada Mixta
-      <input type="checkbox" name="producto" value="Pure"> Pure
-      <input type="checkbox" name="producto" value="Ensalada Rusa"> Ensalada Rusa
-      <input type="checkbox" name="producto" value="Verduras asadas"> Verduras asadas
+    <div class="form-group carne-section">
+      <label class="carnes"><input class="carnes" type="checkbox" value="Carne de ternera">Carne de ternera:</label>
+      <input type="checkbox" class="guarnicion" name="producto" value="Con papas fritas"> Con papas fritas
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Mixta"> Ensalada Mixta
+      <input type="checkbox" class="guarnicion" name="producto" value="Pure"> Pure
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Rusa"> Ensalada Rusa
+      <input type="checkbox" class="guarnicion" name="producto" value="Verduras asadas"> Verduras asadas
     </div>
-    <div class="form-group">
-      <label><input class="carnes" type="checkbox" value="Pollo al horno">Pollo al horno:</label>
-      <input type="checkbox" name="producto" value="Con papas fritas"> Con papas fritas
-      <input type="checkbox" name="producto" value="Ensalada Mixta"> Ensalada Mixta
-      <input type="checkbox" name="producto" value="Pure"> pure
-      <input type="checkbox" name="producto" value="Ensalada Rusa"> Ensalada Rusa
-      <input type="checkbox" name="producto" value="Verduras asadas"> Verduras asadas
+    <div class="form-group carne-section">
+      <label class="carnes"><input class="carnes" type="checkbox" value="Pollo al horno">Pollo al horno:</label>
+      <input type="checkbox" class="guarnicion" name="producto" value="Con papas fritas"> Con papas fritas
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Mixta"> Ensalada Mixta
+      <input type="checkbox" class="guarnicion" name="producto" value="Pure"> pure
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Rusa"> Ensalada Rusa
+      <input type="checkbox" class="guarnicion" name="producto" value="Verduras asadas"> Verduras asadas
     </div>
-    <div class="form-group">
-      <label><input class="carnes" type="checkbox" value="Carne de Cerdo">Carne de Cerdo:</label>
-      <input type="checkbox" name="producto" value="Con papas fritas"> Con papas fritas
-      <input type="checkbox" name="producto" value="Ensalada Mixta"> Ensalada Mixta
-      <input type="checkbox" name="producto" value="Pure"> Pure
-      <input type="checkbox" name="producto" value="Ensalada Rusa"> Ensalada Rusa
-      <input type="checkbox" name="producto" value="Verduras asadas"> Verduras asadas
+    <div class="form-group carne-section">
+      <label class="carnes"><input class="carnes" type="checkbox" value="Carne de Cerdo">Carne de Cerdo:</label>
+      <input type="checkbox" class="guarnicion" name="producto" value="Con papas fritas"> Con papas fritas
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Mixta"> Ensalada Mixta
+      <input type="checkbox" class="guarnicion" name="producto" value="Pure"> Pure
+      <input type="checkbox" class="guarnicion" name="producto" value="Ensalada Rusa"> Ensalada Rusa
+      <input type="checkbox" class="guarnicion" name="producto" value="Verduras asadas"> Verduras asadas
     </div>
-    <button type="submit">Enviar</button>
-  </form>
+    <div class="d-flex justify-content-between align-items-center">
+      <button type="reset" class="btn btn-warning btn-sm order-1" title="borrar datos del formulario">Reset</button>
+      <button type="submit" class="btn btn-primary w-70 order-2">Enviar</button>
+    </div>
+    </form>
 </section>				 
   </main>
   <footer id="footer">

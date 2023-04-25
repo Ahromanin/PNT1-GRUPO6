@@ -1,6 +1,42 @@
 body {
   margin: 0;
 }
+.telefono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.telefono label {
+  font-size: 18px;
+}
+
+#telefono-prefix {
+  width: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#telefono {
+  width: calc(100% - 70px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.carne-section {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 
 .item {
   display: flex;
@@ -200,6 +236,34 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
+.carnes {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-warning.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.btn-warning.btn-sm:hover {
+  color: #212529;
+  background-color: #d39e00;
+  border-color: #c69500;
+}
+
+.btn-primary.w-70 {
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .btn-primary.w-70 {
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 600px) {
