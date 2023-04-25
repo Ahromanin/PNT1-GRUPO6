@@ -3,21 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
   
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      validarChecks();
+  
+      let isValid = true;
+      
+      validarChecksCarnes(isValid);
       const nombre = document.getElementById("nombre");
       const telefono = document.getElementById("telefono");
       const email = document.getElementById("email");
   
-      let isValid = true;
-  
-      if (nombre.value.trim() === "") {
+      if (nombre.value.trim() === "" ) {
         isValid = false;
-        document.getElementById("nombre-error").textContent =
-          "El campo Nombre no puede estar vacío.";
-      } else {
-        document.getElementById("nombre-error").textContent = "";
+        alert("El campo Nombre no puede estar vacío");
       }
-  
       if (telefono.value.trim() === "") {
         isValid = false;
         document.getElementById("telefono-error").textContent =
@@ -57,11 +54,29 @@ document.addEventListener("DOMContentLoaded", function () {
           }
       }
       if (hasChecked == false) {
-          alert("Please select at least one hobby");
+          alert("Por favor seleccione al menos una guarnicion");
           return false;
       }
       return true;
   }
+
+  function validarChecksCarnes() {
+    var chks2 = document.getElementsByClassName('carnes');
+    var hasChecked = false;
+    for (var i = 0; i < chks2.length; i++) {
+        if (chks2[i].checked) {
+          hasChecked = true;
+          validarChecks();
+          break;
+        }
+    }
+    if (hasChecked == false) {
+        alert("Por favor seleccione al menos un corte de carne");
+        return false;
+    }
+    return true;
+}
+
 
   });
   
