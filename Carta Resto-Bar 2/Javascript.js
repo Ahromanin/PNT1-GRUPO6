@@ -85,13 +85,17 @@ document.addEventListener("DOMContentLoaded", function () {
     return  true;
 }
 
+
 const telefonoInput = document.getElementById("telefono");
 
 telefonoInput.addEventListener("input", function (event) {
   const telefono = telefonoInput.value;
-  if (telefono.length > 10) {
+  if (telefono.length > 8) {
     telefonoInput.value = telefono.slice(0, 10);
   }
 });
   });
   
+function showAlert() {
+  alert("El número de teléfono debe tener 8 caracteres");
+}
